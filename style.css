@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 2rem; */
+    height: 100vh;
+    /* background-color: #f4f4f4; */
+    background-image: url(images/enenodd_number-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 2rem;
+    border: 2px solid #033b66;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1{
+    color: #033b66;
+    font-weight:800;
+    margin: 2rem;
+    font-family: "DynaPuff", system-ui;
+    text-align: center;
+}
+
+#number{
+    align-items: center;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#number:focus {
+    border-color: #033b66;
+}
+
+#row4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    width: 150px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #033b66;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #02508f;
+}
+
+.mt-33{
+    width: 150px;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.mt-3{
+    width: 100%;
+    margin-top: 1rem;
+    font-family: "Pacifico", cursive;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+}
+
+#result{
+    color: #033b66;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #number {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 130px;
+        font-size: 16px;
+    }
+}
